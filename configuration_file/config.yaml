@@ -41,15 +41,19 @@ production pathways:
           # efficiency gains will only apply to flows whose name contains `electricity`
           technosphere:
             - salt
+
     # dataset in the imported inventories that represents the technology
     ecoinvent alias:
       # name of the dataset
       name: bread production, activated dough development
       # reference product of the dataset
       reference product: bread
+      # indicate whether the dataset exists in the original database
+      # or if it should be sourced from the inventories folder
+      exists in original database: False
+
     # OPTIONAL: if the dataset should not be duplicated for a specific list of regions
     # in this case, the dataset will not be duplicated for the IAM region "BRA"
-
     except regions:
       - BRA
   SDM:
@@ -60,6 +64,7 @@ production pathways:
     ecoinvent alias:
       name: bread production, straight dough method
       reference product: bread
+      exists in original database: False
     except regions:
       - USA
 
@@ -71,6 +76,7 @@ production pathways:
     ecoinvent alias:
       name: bread production, delayed salt method
       reference product: bread
+      exists in original database: False
     except regions:
       - WEU
       - USA
@@ -93,7 +99,7 @@ production pathways:
     ecoinvent alias:
       name: breadcrumbs production
       reference product: breadcrumbs
-      exists in ecoinvent: True
+      exists in original database: True
 
   CP:
     production volume:
@@ -101,7 +107,7 @@ production pathways:
     ecoinvent alias:
       name: cobalt production
       reference product: copper cake
-      exists in ecoinvent: True
+      exists in original database: True
 
   ALM:
     production volume:
@@ -109,7 +115,7 @@ production pathways:
     ecoinvent alias:
       name: almond production
       reference product: almond
-      exists in ecoinvent: True
+      exists in original database: True
 
   BAN:
     production volume:
@@ -117,7 +123,8 @@ production pathways:
     ecoinvent alias:
       name: banana production
       reference product: banana
-      exists in ecoinvent: True
+      exists in original database: True
+
     efficiency:
       - variable: Efficiency|Banana|Urea
         reference year: 2030
