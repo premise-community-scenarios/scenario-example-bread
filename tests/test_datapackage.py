@@ -7,7 +7,7 @@ FILEPATH_DATAPACKAGE_SCHEMA = "./datapackage.json"
 def test_datapackage():
     dp = Package(FILEPATH_DATAPACKAGE_SCHEMA)
     assert dp.descriptor["profile"] == "data-package"
-    assert len(dp.resources) == 3
+    assert len(dp.resources) >= 2
 
     mandatory_keys  = [
         'profile',
@@ -30,9 +30,8 @@ def test_datapackage():
 
     for resource in dp.resources:
         if resource.name == "config":
-
-            with open(resource.descriptor["path"], "r") as stream:
-                config_file = yaml.safe_load(stream)
+            resource = dp.get_resource("config")
+            config_file = yaml.safe_load(resource.raw_read())
             assert isinstance(config_file, dict)
 
         if resource.name == "scenario_data":

@@ -3,13 +3,13 @@
     "name": "scenario-example-bread",
     "title": "Scenario Example Bread",
     "description": "A scenario example of prospective bread scenario to be used in premise",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "contributors":[{
     "title": "Romain Sacchi",
     "email": "r_s@me.com"
     }],
     "dependencies": {
-        "premise": ">=1.1.8"
+        "premise": ">=1.2.5"
     },
     "ecoinvent": {
         "version": "3.8",
