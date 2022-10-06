@@ -55,6 +55,11 @@
                         "format": "default"
                     },
                     {
+                        "name": "scenario",
+                        "type": "string",
+                        "format": "default"
+                    },
+                    {
                         "name": "region",
                         "type": "string",
                         "format": "default"
