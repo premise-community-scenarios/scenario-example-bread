@@ -28,6 +28,7 @@ def test_config_file():
                         "name": str,
                         "reference product": str,
                         Optional("exists in original database"): bool,
+                        Optional("regionalize"): bool,
                         Optional("new dataset"): bool,
                     },
                     Optional("efficiency"): [

@@ -89,7 +89,8 @@ production pathways:
     replaces in:
       - name: market for NMC111 hydroxide
         reference product: NMC111 hydroxide
-    # OPTIONAL: if the new dataset replaces another, but the substitution ratio is not 1:1
+    # OPTIONAL: if the new dataset replaces another,
+    # but the substitution ratio is not 1:1
     # it can be specified here
     replacement ratio: 0.75
 
