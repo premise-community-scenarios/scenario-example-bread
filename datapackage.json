@@ -15,16 +15,17 @@
         "version": "3.8",
         "system model": "cut-off"
     },
-    "scenarios": [
-        {
-            "model": "image",
-            "pathway": "SSP2-Base"
-        },
-        {
-            "model": "image",
-            "pathway": "SSP2-RCP26"
-        }
-    ],
+    "scenarios": {
+        "Business As Usual": [
+            {
+                "model": "image",
+                "pathway": "SSP2-Base"
+            },
+            {
+                "model": "remind",
+                "pathway": "SSP2-Base"
+            }
+        ],
     "licenses": [{
     "id": "CC0-1.0",
     "title": "CC0 1.0",
