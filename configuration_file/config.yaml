@@ -66,6 +66,7 @@ production pathways:
       name: bread production, straight dough method
       reference product: bread
       exists in original database: False
+      regionalize: True
     except regions:
       - USA
 
@@ -78,6 +79,7 @@ production pathways:
       name: bread production, delayed salt method
       reference product: bread
       exists in original database: False
+      regionalize: True
     except regions:
       - WEU
       - USA
@@ -102,6 +104,7 @@ production pathways:
       name: breadcrumbs production
       reference product: breadcrumbs
       exists in original database: True
+      regionalize: True
 
   CP:
     production volume:
@@ -110,6 +113,7 @@ production pathways:
       name: cobalt production
       reference product: copper cake
       exists in original database: True
+      regionalize: True
 
   ALM:
     production volume:
@@ -118,6 +122,7 @@ production pathways:
       name: almond production
       reference product: almond
       exists in original database: True
+      regionalize: True
 
   BAN:
     production volume:
@@ -126,6 +131,7 @@ production pathways:
       name: banana production
       reference product: banana
       exists in original database: True
+      regionalize: True
 
 # OPTIONAL: if a market needs to be created
 markets:
