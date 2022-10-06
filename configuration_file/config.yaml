@@ -51,6 +51,7 @@ production pathways:
       # indicate whether the dataset exists in the original database
       # or if it should be sourced from the inventories folder
       exists in original database: False
+      regionalize: True
 
     # OPTIONAL: if the dataset should not be duplicated for a specific list of regions
     # in this case, the dataset will not be duplicated for the IAM region "BRA"
@@ -125,15 +126,6 @@ production pathways:
       name: banana production
       reference product: banana
       exists in original database: True
-
-    efficiency:
-      - variable: Efficiency|Banana|Urea
-        reference year: 2030
-        includes:
-          technosphere:
-            - market for urea
-          biosphere:
-            - Dinitrogen monoxide
 
 # OPTIONAL: if a market needs to be created
 markets:
