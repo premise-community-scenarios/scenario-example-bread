@@ -151,8 +151,8 @@ markets:
     # in the database.
     # in this case, `market for bread` will replace providers of carbon back and clay bricks.
     replaces:
-      - name: market for carbon black
-        reference product: carbon black
+      - name: market for carbon
+        reference product: carbon
         operator: contains
       - name: market for clay brick
         reference product: clay brick
