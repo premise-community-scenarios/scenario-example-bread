@@ -88,7 +88,7 @@ production pathways:
     # `NMC111 hydroxide production, for Li-ion battery` wherever it is used
     replaces:
       - name: NMC111 hydroxide production, for Li-ion battery
-        reference product: NMC111 hydroxide
+        product: NMC111 hydroxide
     replaces in:
       - name: market for NMC111 hydroxide
         reference product: NMC111 hydroxide
@@ -152,10 +152,10 @@ markets:
     # in this case, `market for bread` will replace providers of carbon back and clay bricks.
     replaces:
       - name: market for carbon
-        reference product: carbon
+        product: carbon
         operator: contains
       - name: market for clay brick
-        reference product: clay brick
+        product: clay brick
     # OPTIONAL: if the substitution ratio between `market for bread` and the providers to be replaced
     # is not 1:1, then a replacement ratio can be specified
     replacement ratio: 1.05
@@ -180,9 +180,9 @@ markets:
     # case insensitive, must contain this string in `name`and `reference product`
     replaces:
       - name: market for tap water
-        reference product: tap water
+        product: tap water
       - name: market for cement, Portland
-        reference product: cement, Portland
+        product: cement, Portland
     replaces in:
       - name: concrete production
         reference product: concrete
