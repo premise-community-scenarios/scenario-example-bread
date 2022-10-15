@@ -153,6 +153,7 @@ markets:
     replaces:
       - name: market for carbon black
         reference product: carbon black
+        operator: contains
       - name: market for clay brick
         reference product: clay brick
     # OPTIONAL: if the substitution ratio between `market for bread` and the providers to be replaced
