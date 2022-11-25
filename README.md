@@ -64,5 +64,7 @@ How to use it?
                 bread_scenario, # <-- list datapackage objects here
             ] 
         )
+    
+    ndb.update_external_scenario()
 ```
 
