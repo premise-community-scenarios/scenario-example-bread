@@ -177,7 +177,7 @@ markets:
     # OPTIONAL: if the new market is supposed to replace one or several other providers
     # in the database.
     # in this case, `market for croissants` will replace providers of carbon back and clay bricks.
-    # case insensitive, must contain this string in `name`and `reference product`
+    # case-insensitive, must contain this string in `name`and `reference product`
     replaces:
       - name: market for tap water
         product: tap water
@@ -186,8 +186,10 @@ markets:
     replaces in:
       - name: concrete production
         reference product: concrete
+        operator: contains
       - name: electricity production
         reference product: electricity
+        operator: contains
 
     # OPTIONAL: if the substitution ratio between `market for bread` and the providers to be replaced
     # is not 1:1, then a replacement ratio can be specified
