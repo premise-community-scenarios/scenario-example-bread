@@ -1,11 +1,14 @@
 import yaml
 import pandas as pd
 import numpy as np
-from premise.ecoinvent_modification import (
-    LIST_IMAGE_REGIONS,
-    LIST_REMIND_REGIONS,
-    SUPPORTED_EI_VERSIONS,
-)
+
+from premise.utils import load_constants
+
+config = load_constants()
+LIST_REMIND_REGIONS = config["LIST_REMIND_REGIONS"]
+LIST_IMAGE_REGIONS = config["LIST_IMAGE_REGIONS"]
+SUPPORTED_EI_VERSIONS = config["SUPPORTED_EI_VERSIONS"]
+
 from premise.geomap import Geomap
 
 from datapackage import Package
